@@ -18,3 +18,9 @@ jobs:
       - name: Sync free instructions for mainnets
         run: |
           curl --request POST --url 'https://explorer.meson.fi/api/v1/cron/sync-free-instruction'
+      - name: Sync Directs for testnets
+        run: |
+          curl --request POST --url 'https://testnet-explorer.meson.fi/api/v1/cron/sync-free-direct'
+      - name: Sync Directs for mainnets
+        run: |
+          curl --request POST --url 'https://explorer.meson.fi/api/v1/cron/sync-free-direct'
