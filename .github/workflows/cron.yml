@@ -24,3 +24,9 @@ jobs:
       - name: Sync Directs for mainnets
         run: |
           curl --request POST --url 'https://explorer.meson.fi/api/v1/cron/sync-free-direct'
+      - name:  Sync Reward Host for testnets
+        run: |
+          curl --request POST --url 'https://testnet-explorer.meson.fi/api/v1/cron/sync-reward-host'
+      - name:  Sync Reward Host for mainnets
+        run: |
+          curl --request POST --url 'https://explorer.meson.fi/api/v1/cron/sync-reward-host'
